@@ -8,7 +8,7 @@ try: app_id = int(os.environ.get("app_id", "26597768"))
 except Exception as app_id: print(f"⚠️ App ID Invalid {app_id}")
 try: api_hash = os.environ.get("api_hash", "340f87444e648a712eae77c310648e21")
 except Exception as api_id: print(f"⚠️ Api Hash Invalid {api_hash}")
-try: bot_token = os.environ.get("bot_token", "7593206057:AAHicqz9ErmxcrLTSCf7Po2I530C4zAfLN0")
+try: bot_token = os.environ.get("bot_token", "7593206057:AAFPk0rnUjlxiZwz1s9Hxrq7-gqX-ZYFisA")
 except Exception as bot_token: print(f"⚠️ Bot Token Invalid {bot_token}")
 try: custom_caption = os.environ.get("custom_caption", "`{file_name}`join chennal")
 except Exception as custom_caption: print(f"⚠️ Custom Caption Invalid {custom_caption}")
@@ -20,14 +20,14 @@ start_message = """
 <b>👋Hello {}</b>
 <b>I am an AutoCaption bot</b>
 <b>All you have to do is add me to your channel and I will show you my power</b>
-<b>@VJ_Botz</b>"""
+<b>@MovieSearchAutoGroup</b>"""
 
 about_message = """
-<b>• Name : <a href=https://t.me/botmaster135>VJ AutoCaption</a></b>
-<b>• Developer : <a href=https://t.me/VJ_Botz>[VJ UPDATES]</a></b>
+<b>• Name : <a href=https://t.me/MovieSearchAutoGroup>VJ AutoCaption</a></b>
+<b>• Developer : <a href=https://t.me/NetflixHindiMOVIEHD1>[VJ UPDATES]</a></b>
 <b>• Language : Python3</b>
 <b>• Library : Pyrogram v{version}</b>
-<b>• Updates : <a href=https://t.me/+eEMdl7-M_5RmMWNl>Click Here</a></b>
+<b>• Updates : <a href=https://t.me/NetflixHindiMOVIEHD1>Click Here</a></b>
 <b>• Source Code : <a href=https://github.com/VJBots/VJ-AutoCaption-Bot>Click Here</a></b>"""
 
 @AutoCaptionBotV1.on_message(pyrogram.filters.private & pyrogram.filters.command(["start"]))
@@ -77,10 +77,10 @@ def get_file_details(update: pyrogram.types.Message):
 def start_buttons(bot, update):
   bot = bot.get_me()
   buttons = [[
-   pyrogram.types.InlineKeyboardButton("Updates", url="t.me/+eEMdl7-M_5RmMWNl"),
+   pyrogram.types.InlineKeyboardButton("Updates", url="t.me/NetflixHindiMOVIEHD1"),
    pyrogram.types.InlineKeyboardButton("About 🤠", callback_data="about")
    ],[
-   pyrogram.types.InlineKeyboardButton("➕️ Add To Your Channel ➕️", url=f"http://t.me/{autocaptuon50_bot}?startchannel=true")
+   pyrogram.types.InlineKeyboardButton("➕️ Add To Your Channel ➕️", url=f"http://t.me/{@autocaptuon50_bot}?startchannel=true")
    ]]
   return pyrogram.types.InlineKeyboardMarkup(buttons)
 
@@ -91,7 +91,7 @@ def about_buttons(bot, update):
   return pyrogram.types.InlineKeyboardMarkup(buttons)
 
 print("Telegram AutoCaption V1 Bot Start")
-print("Bot Created By https://t.me/+eEMdl7-M_5RmMWNl")
+print("Bot Created By https://t.me/NetflixHindiMOVIEHD1")
 
 AutoCaptionBotV1.run()
 
